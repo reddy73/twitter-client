@@ -48,7 +48,7 @@ public class TwitterClient {
     public Client buildTwitterClient() throws IOException {
         Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
         StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
-        List<String> terms = Lists.newArrayList("CAA", "SushantSinghRajput");
+        List<String> terms = Lists.newArrayList("keyWord1", "keyWord");
         hosebirdEndpoint.trackTerms(terms);
 
         Properties properties= new Properties();
